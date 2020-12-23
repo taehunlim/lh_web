@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
 import { Row, Col } from "reactstrap";
-import logo from "../assets/images/logo.jpg";
+import logo from "../../assets/images/logo.jpg";
 
 const FooterLink = () => {
     return (
