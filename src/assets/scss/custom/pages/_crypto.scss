@@ -1,4 +1,4 @@
-// 
+//
 // crypto.scss
 //
 
@@ -78,10 +78,13 @@
     @media (max-width: 991.98px) {
         background-color: $topnav-bg;
     }
-    
+
     .navbar-logo{
         line-height: 70px;
         transition: all 0.4s;
+        .logo{
+            height: 55px;
+        }
         .logo-dark{
             display: none;
             @media (max-width: 991.98px) {
@@ -95,7 +98,7 @@
             }
         }
     }
-    
+
 
     .navbar-nav{
         .nav-item{

@@ -8,7 +8,7 @@ const FooterLink = () => {
             <Row>
                 <Col lg="6">
                     <div className="mb-4">
-                        <img src={logo} alt="" height="20"/>
+                        <img src={logo} alt="" height="40"/>
                     </div>
 
 
