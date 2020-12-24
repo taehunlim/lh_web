@@ -12,20 +12,22 @@ import Service from "../components/Home/Service";
 const Home = () => {
     return (
         <Fragment>
+            <div style={{backgroundColor: "light-grey"}}>
 
-            <Header/>
+                <Header/>
 
-            <Cover/>
+                <Cover/>
 
-            <ColorOfLife/>
+                <ColorOfLife/>
 
-            <IhOfLife/>
+                <IhOfLife/>
 
-            <IhNews/>
+                <IhNews/>
 
-            <Service/>
+                <Service/>
 
-            <Footer/>
+                <Footer/>
+            </div>
         </Fragment>
     );
 };
