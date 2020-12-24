@@ -10,7 +10,6 @@ function App() {
               <Route path="/" exact render={props => <Home {...props}/>}/>
               <Redirect to="/" />
           </Switch>
-
       </BrowserRouter>
   );
 }

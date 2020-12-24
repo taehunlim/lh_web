@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 const Cover = () => {
     return (
         <Fragment>
-            <section className="section hero-section bg-ico-hero" id="home">
+            <section className="section hero-section bg-ico-hero" id="cover">
                 <div className="bg-overlay bg-primary"></div>
                 <Container>
                     <Row className="align-items-center">

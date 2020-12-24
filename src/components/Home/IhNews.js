@@ -64,7 +64,7 @@ const IhNews = () => {
 
     return (
         <Fragment>
-            <section className="section" id="#ihnews">
+            <section className="section" id="ihnews">
                 <Container>
                     <Row>
                         <Col lg="12">

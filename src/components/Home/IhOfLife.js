@@ -63,7 +63,7 @@ const IhOfLife = () => {
 
     return (
         <Fragment>
-            <section className="section" id="#ihoflife">
+            <section className="section" id="ihoflife">
                 <Container>
                     <Row>
                         <Col lg="12">
