@@ -45,36 +45,42 @@ const IhNews = () => {
                                     <>
                                         <Row>
                                             <Col md={4}>
-                                                <Card>
-                                                    <CardImg top className="img-fluid" src={image1} alt="Skote" />
-                                                    <CardBody>
-                                                        <CardTitle className="mt-0">IH NEWS</CardTitle>
-                                                        <CardText>
-                                                            개원 20주년 온라인 기념식 개최 외
-                                                        </CardText>
-                                                    </CardBody>
+                                                <Card className="card-hover">
+                                                    <Link className="card-hover__image" to="/">
+                                                        <CardImg top className="img-fluid" src={image1} alt="Skote" />
+                                                        <CardBody>
+                                                            <CardTitle className="mt-0">IH NEWS</CardTitle>
+                                                            <CardText>
+                                                                개원 20주년 온라인 기념식 개최 외
+                                                            </CardText>
+                                                        </CardBody>
+                                                    </Link>
                                                 </Card>
                                             </Col>
                                             <Col md={4}>
-                                                <Card>
-                                                    <CardImg top className="img-fluid" src={image2} alt="Skote" />
-                                                    <CardBody>
-                                                        <CardTitle className="mt-0">IH TODAY</CardTitle>
-                                                        <CardText>
-                                                            방송 / 신문 / 포상 / 결혼 / 출산
-                                                        </CardText>
-                                                    </CardBody>
+                                                <Card className="card-hover">
+                                                    <Link className="card-hover__image" to="/">
+                                                        <CardImg top className="img-fluid" src={image2} alt="Skote" />
+                                                        <CardBody>
+                                                            <CardTitle className="mt-0">IH TODAY</CardTitle>
+                                                            <CardText>
+                                                                방송 / 신문 / 포상 / 결혼 / 출산
+                                                            </CardText>
+                                                        </CardBody>
+                                                    </Link>
                                                 </Card>
                                             </Col>
                                             <Col md={4}>
-                                                <Card>
-                                                    <CardImg top className="img-fluid" src={image3} alt="Skote" />
-                                                    <CardBody>
-                                                        <CardTitle className="mt-0">LETTER</CardTitle>
-                                                        <CardText>
-                                                            2020 AUTUMN 독자 퀴즈, 독자 의견, 사랑의 사회사업 후원 안내
-                                                        </CardText>
-                                                    </CardBody>
+                                                <Card className="card-hover">
+                                                    <Link className="card-hover__image" to="/">
+                                                        <CardImg top className="img-fluid" src={image3} alt="Skote" />
+                                                        <CardBody>
+                                                            <CardTitle className="mt-0">LETTER</CardTitle>
+                                                            <CardText>
+                                                                2020 AUTUMN 독자 퀴즈, 독자 의견, 사랑의 사회사업 후원 안내
+                                                            </CardText>
+                                                        </CardBody>
+                                                    </Link>
                                                 </Card>
                                             </Col>
 
@@ -85,36 +91,42 @@ const IhNews = () => {
                                     <>
                                         <Row>
                                             <Col md={4}>
-                                                <Card>
-                                                    <CardImg top className="img-fluid" src={image2} alt="Skote" />
-                                                    <CardBody>
-                                                        <CardTitle className="mt-0">IH TODAY</CardTitle>
-                                                        <CardText>
-                                                            방송 / 신문 / 포상 / 결혼 / 출산
-                                                        </CardText>
-                                                    </CardBody>
+                                                <Card className="card-hover">
+                                                    <Link className="card-hover__image" to="/">
+                                                        <CardImg top className="img-fluid" src={image2} alt="Skote" />
+                                                        <CardBody>
+                                                            <CardTitle className="mt-0">LETTER</CardTitle>
+                                                            <CardText>
+                                                                2020 AUTUMN 독자 퀴즈, 독자 의견, 사랑의 사회사업 후원 안내
+                                                            </CardText>
+                                                        </CardBody>
+                                                    </Link>
                                                 </Card>
                                             </Col>
                                             <Col md={4}>
-                                                <Card>
-                                                    <CardImg top className="img-fluid" src={image3} alt="Skote" />
-                                                    <CardBody>
-                                                        <CardTitle className="mt-0">LETTER</CardTitle>
-                                                        <CardText>
-                                                            2020 AUTUMN 독자 퀴즈, 독자 의견, 사랑의 사회사업 후원 안내
-                                                        </CardText>
-                                                    </CardBody>
+                                                <Card className="card-hover">
+                                                    <Link className="card-hover__image" to="/">
+                                                        <CardImg top className="img-fluid" src={image3} alt="Skote" />
+                                                        <CardBody>
+                                                            <CardTitle className="mt-0">LETTER</CardTitle>
+                                                            <CardText>
+                                                                2020 AUTUMN 독자 퀴즈, 독자 의견, 사랑의 사회사업 후원 안내
+                                                            </CardText>
+                                                        </CardBody>
+                                                    </Link>
                                                 </Card>
                                             </Col>
                                             <Col md={4}>
-                                                <Card>
-                                                    <CardImg top className="img-fluid" src={image4} alt="Skote" />
-                                                    <CardBody>
-                                                        <CardTitle className="mt-0">진료시간표</CardTitle>
-                                                        <CardText>
-                                                            ※ 진료일정은 병원사정에 의해 변경될 수 있습니다.
-                                                        </CardText>
-                                                    </CardBody>
+                                                <Card className="card-hover">
+                                                    <Link className="card-hover__image" to="/">
+                                                        <CardImg top className="img-fluid" src={image4} alt="Skote" />
+                                                        <CardBody>
+                                                            <CardTitle className="mt-0">진료시간표</CardTitle>
+                                                            <CardText>
+                                                                ※ 진료일정은 병원사정에 의해 변경될 수 있습니다.
+                                                            </CardText>
+                                                        </CardBody>
+                                                    </Link>
                                                 </Card>
                                             </Col>
 

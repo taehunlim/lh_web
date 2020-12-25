@@ -1,19 +1,19 @@
-// 
+//
 // _demos.scss
-// 
+//
 
 // Demo Only
 .button-items {
     margin-left: -8px;
     margin-bottom: -12px;
-    
+
     .btn {
         margin-bottom: 12px;
         margin-left: 8px;
     }
 }
 
-// Lightbox 
+// Lightbox
 
 .mfp-popup-form {
     max-width: 1140px;
@@ -36,7 +36,7 @@
 .icon-demo-content {
     text-align: center;
     color: $gray-500;
-  
+
     i{
       display: block;
       font-size: 24px;
@@ -44,10 +44,10 @@
       color: $gray-600;
       transition: all 0.4s;
     }
-  
+
     .col-lg-4 {
       margin-top: 24px;
-  
+
       &:hover {
         i {
           color: $primary;

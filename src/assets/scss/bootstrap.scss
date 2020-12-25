@@ -15,6 +15,7 @@ File: Custom Bootstrap Css File
 @import "./node_modules/bootstrap/scss/bootstrap";
 
 @import "custom/components/reboot";
+@import "custom/components/mixins";
 @import "custom/components/backgrounds";
 @import "custom/components/badge";
 @import "custom/components/buttons";
@@ -25,3 +26,4 @@ File: Custom Bootstrap Css File
 @import "custom/components/table";
 @import "custom/components/pagination";
 @import "custom/components/progress";
+@import "custom/components/grid";
