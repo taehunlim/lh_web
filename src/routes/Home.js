@@ -8,11 +8,10 @@ import IhOfLife from "../components/Home/IhOfLife";
 import IhNews from "../components/Home/IhNews";
 import Service from "../components/Home/Service";
 
-
 const Home = () => {
     return (
         <Fragment>
-            <div style={{backgroundColor: "light-grey"}}>
+            <div style={{backgroundColor: "#ededed"}}>
 
                 <Header/>
 
