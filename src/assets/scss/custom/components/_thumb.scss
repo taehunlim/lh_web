@@ -1,0 +1,19 @@
+
+.carousel-indicators {
+
+  img {
+    max-width: 400px;
+    overflow: hidden;
+    display: block;
+  }
+
+  li {
+    margin: 0px 20px;
+    height: auto;
+    width: 400px;
+    border: none;
+    box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.75);
+
+
+  }
+}

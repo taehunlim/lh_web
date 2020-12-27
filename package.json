@@ -11,6 +11,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "bootstrap": "^4.5.3",
+    "classnames": "^2.2.6",
     "node-sass": "4.13.1",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
@@ -18,8 +19,11 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "reactstrap": "^8.7.1",
+    "start": "^5.1.0",
     "styled-components": "^5.2.1",
-    "web-vitals": "^0.2.4"
+    "swiper": "^6.4.5",
+    "web-vitals": "^0.2.4",
+    "yarn": "^1.22.10"
   },
   "scripts": {
     "start": "react-scripts start",
