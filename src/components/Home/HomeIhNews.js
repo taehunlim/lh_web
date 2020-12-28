@@ -31,21 +31,28 @@ const HomeIhNews = () => {
 
     const items = [
         {
+            id: "1",
             src: image1,
             title: "IH NEWS",
             caption: "개원 20주년 온라인 기념식 개최 외"
         },
         {
+
+            id: "2",
             src: image2,
             title: "IH TODAY",
             caption: "방송 / 신문 / 포상 / 결혼 / 출산"
         },
         {
+
+            id: "3",
             src: image3,
             title: "LETTER",
             caption: "2020 AUTUMN 독자 퀴즈, 독자 의견, 사랑의 사회사업 후원 안내"
         },
         {
+
+            id: "4",
             src: image4,
             title: "진료시간표",
             caption: "※ 진료일정은 병원사정에 의해 변경될 수 있습니다."
@@ -92,7 +99,7 @@ const HomeIhNews = () => {
                                                 <Row>
                                                     <Col md={12}>
                                                         <Card className="card-hover">
-                                                            <Link className="card-hover__image" to="/">
+                                                            <Link className="card-hover__image" to={`ihofnews/${item.id}`}>
                                                                 <CardImg top className="img-fluid" src={item.src} alt="Skote" />
                                                                 <CardBody>
                                                                     <CardTitle className="mt-0">{item.title}</CardTitle>
