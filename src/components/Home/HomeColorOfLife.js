@@ -7,124 +7,79 @@ import {
     CardBody,
     CardText,
     CardImg,
-    CardTitle,
-    CardSubtitle
+    CardTitle
 } from 'reactstrap';
 import {Link} from 'react-router-dom';
 import SwiperCore, {Controller, Scrollbar, Navigation, Pagination } from 'swiper'
 import {SwiperSlide, Swiper} from 'swiper/react'
+
 import {trimText} from '../../utils'
 
-import image1 from'../../assets/images/example/IhofLife/bcontThumb2_1.jpg'
-import image2 from'../../assets/images/example/IhofLife/bcontThumb2_2.jpg'
-import image3 from'../../assets/images/example/IhofLife/bcontThumb2_3.jpg'
-import image4 from'../../assets/images/example/IhofLife/bcontThumb2_4.jpg'
-import image5 from'../../assets/images/example/IhofLife/bcontThumb2_5.jpg'
-import image6 from'../../assets/images/example/IhofLife/bcontThumb2_6.jpg'
-import image7 from'../../assets/images/example/IhofLife/bcontThumb2_7.jpg'
-import image8 from'../../assets/images/example/IhofLife/bcontThumb2_8.jpg'
-import image9 from'../../assets/images/example/IhofLife/bcontThumb2_9.jpg'
-import image10 from'../../assets/images/example/IhofLife/bcontThumb2_10.jpg'
-import image11 from'../../assets/images/example/IhofLife/bcontThumb2_11.jpg'
-import image12 from'../../assets/images/example/IhofLife/bcontThumb2_12.jpg'
-import image13 from'../../assets/images/example/IhofLife/bcontThumb2_13.jpg'
+import image1 from '../../assets/images/example/color1.jpg'
+import image2 from '../../assets/images/example/color2.jpg'
+import image3 from '../../assets/images/example/color3.jpg'
+import image4 from '../../assets/images/example/color4.jpg'
+import image5 from '../../assets/images/example/color5.jpg'
 
 SwiperCore.use([Navigation, Pagination, Controller, Scrollbar])
 
-const IhOfLife = () => {
 
-    const [step1, setStep1] = useState(true)
-    const [step2, setStep2] = useState(false)
+const HomeColorOfLife = () => {
 
     const items = [
         {
+            id: 1,
             src: image1,
-            head: "IH 20th",
-            title: "의료서비스 혁신 기반으로 스마트병원 시대를 꿈꾸다",
-            caption: ""
+            head: "Prologue",
+            title: "희망을 이야기하는 Color",
+            caption: "    긴 밤이 지나면 하루도 거르지 않고 어김없이 노란 오늘의 태양이 떠오른다.\n" +
+                "컴컴했던 세상은 태양의 색으로 물들며 밤새 잠들어 있던 일상을 깨운다.\n" +
+                "긴 밤의 끝에는 반드시 태양이 떠올라서일까, 태양의 노란색은 희망과 행복을 상징하는 컬러로 이야기되고 있다."
         },
         {
+            id: 2,
             src: image2,
-            head: "함꼐 걷기",
-            title: "변함없는 신뢰로 맞이한 생명의 탄생",
-            caption: ""
+            head: "IH 진료실 1",
+            title: "몸 구석구석 건강을 돌보는 혈관, 어떠한 질병이?",
+            caption: "건강보험심사평가원에 따르면 담낭염으로 병원을 찾는 환자 수가 매년 증가하는 것으로 나타났다.\n" +
+                "특히 최근에는 서구화된 식단과 비만으로 콜레스테롤 담석이 증가하고 있으며, " +
+                "체중을 줄이기 위한 무리한 다이어트나 장기간 금식으로 담즙 속 염분과 콜레스테롤 균형이 깨져 만성 담낭염의 발병 위험도 커지고 있다."
         },
         {
+            id: 3,
             src: image3,
-            head: "오후의 티타임",
-            title: "외래팀",
-            caption: ""
+            head: "IH 진료실 2",
+            title: "내 눈에 날파리가? 비문증의 모든 것",
+            caption: "몸의 신진대사를 원활히 돌아가게 하려면 혈관을 통해 영양소를 잘 전달하고 노폐물을 잘 배출하는 것이 중요하다.\n" +
+                "나이가 듦에 따라 혈관 역시 노화되어 변화를 겪게 되는데, 평소 잘 관리하지 않으면 동맥질환의 원인이 될 수 있다."
         },
         {
+            id: 4,
             src: image4,
-            head: "IH POWER",
-            title: "특수사업팀 김민경 & 연구 전문의 안찬식",
-            caption: ""
+            head: "IH 진료실 3",
+            title: "극심한 복통? 무증상? 급성 담낭염과 만성 담낭염",
+            caption: "건강보험심사평가원에 따르면 담낭염으로 병원을 찾는 환자 수가 매년 증가하는 것으로 나타났다.\n" +
+                "특히 최근에는 서구화된 식단과 비만으로 콜레스테롤 담석이 증가하고 있으며, 체중을 줄이기 위한 무리한 다이어트나 장기간 금식으로 담즙 속 염분과 콜레스테롤 균형이 깨져 만성 담낭염의 발병 위험도 커지고 있다."
         },
         {
+            id: 5,
             src: image5,
-            head: "논문 다이제스",
-            title: "트포괄수가제 도입 이후",
-            caption: ""
-        },
-        {
-            src: image6,
-            head: "Prologue",
-            title: "희망을 이야기하는 Color",
-            caption: ""
-        },
-        {
-            src: image7,
-            head: "Prologue",
-            title: "희망을 이야기하는 Color",
-            caption: ""
-        },
-        {
-            src: image8,
-            head: "Prologue",
-            title: "희망을 이야기하는 Color",
-            caption: ""
-        },
-        {
-            src: image9,
-            head: "Prologue",
-            title: "희망을 이야기하는 Color",
-            caption: ""
-        },
-        {
-            src: image10,
-            head: "Prologue",
-            title: "희망을 이야기하는 Color",
-            caption: ""
-        },
-        {
-            src: image11,
-            head: "Prologue",
-            title: "희망을 이야기하는 Color",
-            caption: ""
-        },
-        {
-            src: image12,
-            head: "Prologue",
-            title: "희망을 이야기하는 Color",
-            caption: ""
-        },
-        {
-            src: image13,
-            head: "Prologue",
-            title: "희망을 이야기하는 Color",
-            caption: ""
+            head: "IH 진료실 4",
+            title: "피부 노화의 주범, 검버섯",
+            caption: "검버섯은 나이가 들수록 흑자, 기미 , 주근깨와 함께 가장 많이 발생하는 피부 증상 중 하나이다.\n" +
+                " 특히나 검버섯은 흑자, 기미, 주근깨보다 모양도 크고 색도 진해 미용상 더욱 신경 쓰이는 피부 병변 중 하나이다."
         }
     ]
 
     return (
+        // Slide
         <Fragment>
-            <section className="section" id="ihoflife">
+            <section className="section" id="coloroflife">
                 <Container>
                     <Row>
                         <Col lg="12">
                             <div className="text-center mb-5">
-                                <h4>IH of Life</h4>
+                                <h4>COLOR of Life </h4>
                             </div>
                         </Col>
                     </Row>
@@ -157,7 +112,7 @@ const IhOfLife = () => {
                                                 <Row>
                                                     <Col md={12}>
                                                         <Card className="card-hover">
-                                                            <Link className="card-hover__image" to="/">
+                                                            <Link className="card-hover__image" to={`/coloroflife/${item.id}`}>
                                                                 <CardBody>
                                                                     <CardTitle className="mt-0">{item.head}</CardTitle>
                                                                 </CardBody>
@@ -182,13 +137,15 @@ const IhOfLife = () => {
                 </Container>
             </section>
         </Fragment>
+
+
         // <Fragment>
-        //     <section className="section" id="ihoflife">
+        //     <section className="section" id="coloroflife">
         //         <Container>
         //             <Row>
         //                 <Col lg="12">
         //                     <div className="text-center mb-5">
-        //                         <h4>IH of Life</h4>
+        //                         <h4>COLOR of Life </h4>
         //                     </div>
         //                 </Col>
         //             </Row>
@@ -205,17 +162,15 @@ const IhOfLife = () => {
         //                                         <Card className="card-hover">
         //                                             <Link className="card-hover__image" to="/">
         //                                                 <CardBody>
-        //                                                     <CardTitle className="mt-0">IH 20th</CardTitle>
+        //                                                     <CardTitle className="mt-0">Prologue</CardTitle>
         //                                                 </CardBody>
-        //                                                 <CardImg className="img-fluid" src={image1} alt="Skote" />
+        //                                                 <CardImg top className="img-fluid" src={image1} alt="Skote" />
         //                                                 <CardBody>
-        //                                                     <CardTitle className="mt-0">의료서비스 혁신 기반으로 스마트병원 시대를 꿈꾸다</CardTitle>
+        //                                                     <CardTitle className="mt-0">희망을 이야기하는 Color</CardTitle>
         //                                                     <CardText>
-        //                                                         포스트 코로나 시대를 맞이한 우리는 새로운 일상에 대한 적응과 대비가 필요하다.
-        //                                                         날로 발전하는 정보통신기술(이하 ICT) 발전으로 의료분야에 ICT 적용을 통한 스마트 의료가 가능해진 시대,
-        //                                                         5G, IoT 디지털기술의 도입은 비대면으로 환자의 안전을 강화할 수 있게 되었고,
-        //                                                         입원환자 실시간 모니터링은 물론 진단 및 치료의 질을 한층 높일 수 있게 되었다.
-        //                                                         감염병 확산으로 인해 비대면 진료 및 치료 환경이 중요시되고 있는 지금, 일산병원 역시 새로운 도전과 발전을 위해 분주히 움직이고 있다.
+        //                                                         긴 밤이 지나면 하루도 거르지 않고 어김없이 노란 오늘의 태양이 떠오른다.
+        //                                                         컴컴했던 세상은 태양의 색으로 물들며 밤새 잠들어 있던 일상을 깨운다.
+        //                                                         긴 밤의 끝에는 반드시 태양이 떠올라서일까, 태양의 노란색은 희망과 행복을 상징하는 컬러로 이야기되고 있다.
         //                                                     </CardText>
         //                                                 </CardBody>
         //                                             </Link>
@@ -225,15 +180,14 @@ const IhOfLife = () => {
         //                                         <Card className="card-hover">
         //                                             <Link className="card-hover__image" to="/">
         //                                                 <CardBody>
-        //                                                     <CardTitle className="mt-0">함께 걷기</CardTitle>
+        //                                                     <CardTitle className="mt-0">IH 진료실 1</CardTitle>
         //                                                 </CardBody>
-        //                                                 <CardImg className="img-fluid" src={image2} alt="Skote" />
+        //                                                 <CardImg top className="img-fluid" src={image2} alt="Skote" />
         //                                                 <CardBody>
-        //                                                     <CardTitle className="mt-0">변함없는 신뢰로 맞이한 생명의탄생</CardTitle>
+        //                                                     <CardTitle className="mt-0">몸 구석구석 건강을 돌보는 혈관, 어떠한 질병이?</CardTitle>
         //                                                     <CardText>
-        //                                                         저출산이 국가적인 과제로 떠오른 시대다. 그러나 여전히 생명의 탄생을 간절하게 기다리는 이들이 많다.
-        //                                                         박희정 씨 역시 오랜 기다림 끝에 사랑스러운 두 아이를 만났다. 아이들의 건강한 모습을 지켜보며 이제야 웃음 짓지만,
-        //                                                         출산에 이르기까지 과정은 쉽지 않았다. 하지만 김의혁 교수의 전문적인 조언과 대처 덕분에 건강하게 출산을 마칠 수 있었다.
+        //                                                         몸의 신진대사를 원활히 돌아가게 하려면 혈관을 통해 영양소를 잘 전달하고 노폐물을 잘 배출하는 것이 중요하다.
+        //                                                         나이가 듦에 따라 혈관 역시 노화되어 변화를 겪게 되는데, 평소 잘 관리하지 않으면 동맥질환의 원인이 될 수 있다.
         //                                                     </CardText>
         //                                                 </CardBody>
         //                                             </Link>
@@ -243,15 +197,15 @@ const IhOfLife = () => {
         //                                         <Card className="card-hover">
         //                                             <Link className="card-hover__image" to="/">
         //                                                 <CardBody>
-        //                                                     <CardTitle className="mt-0">오후의 티타임</CardTitle>
+        //                                                     <CardTitle className="mt-0">IH 진료실 2</CardTitle>
         //                                                 </CardBody>
-        //                                                 <CardImg className="img-fluid" src={image3} alt="Skote" />
+        //                                                 <CardImg top className="img-fluid" src={image3} alt="Skote" />
         //                                                 <CardBody>
-        //                                                     <CardTitle className="mt-0">환자의 가장 가까이에서 환자를 위해 움직이다</CardTitle>
+        //                                                     <CardTitle className="mt-0">내 눈에 날파리가? 비문증의 모든 것</CardTitle>
         //                                                     <CardText>
-        //                                                         외래팀은 외래진료서비스에 관한 전반적인 업무를 담당한다.
-        //                                                         외래 진료는 병원을 찾은 환자에게 해답과 방향을 제시하는 것이기에 꼭 필요한 일이다.
-        //                                                         외래팀은 언제나 환자의 가장 가까이에서, 그들의 목소리에 귀를 기울인다.
+        //                                                         어느 날 갑자기 혹은 유독 햇빛이 심한 날 눈 앞에
+        //                                                         날파리같은 작은 먼지가 보이고 시선을 옮겨도 계속 눈앞에 아른거리는 느낌이 든다면,
+        //                                                         ‘비문증’을 의심해보아야 한다.
         //                                                     </CardText>
         //                                                 </CardBody>
         //                                             </Link>
@@ -259,7 +213,8 @@ const IhOfLife = () => {
         //                                     </Col>
         //
         //                                 </Row>
-        //                             </> : null}
+        //                             </> : null
+        //                         }
         //
         //                         {step2 ?
         //                             <>
@@ -268,14 +223,15 @@ const IhOfLife = () => {
         //                                         <Card className="card-hover">
         //                                             <Link className="card-hover__image" to="/">
         //                                                 <CardBody>
-        //                                                     <CardTitle className="mt-0">IH POWER</CardTitle>
+        //                                                     <CardTitle className="mt-0">IH 진료실 2</CardTitle>
         //                                                 </CardBody>
-        //                                                 <CardImg className="img-fluid" src={image4} alt="Skote" />
+        //                                                 <CardImg top className="img-fluid" src={image3} alt="Skote" />
         //                                                 <CardBody>
-        //                                                     <CardTitle className="mt-0">특수사업팀 김민경 & 연구 전문의 안찬식</CardTitle>
+        //                                                     <CardTitle className="mt-0">내 눈에 날파리가? 비문증의 모든 것</CardTitle>
         //                                                     <CardText>
-        //                                                         고인분과 유가족을 생각하며 초심을 잃지 않고 진심을 다해 최선을 다하겠습니다. &
-        //                                                         빅데이터와 임상을 융합한 다양한 연구활동으로 국민건강증진을 위해 최선의 노력을 다하겠습니다.
+        //                                                         어느 날 갑자기 혹은 유독 햇빛이 심한 날 눈 앞에
+        //                                                         날파리같은 작은 먼지가 보이고 시선을 옮겨도 계속 눈앞에 아른거리는 느낌이 든다면,
+        //                                                         ‘비문증’을 의심해보아야 한다.
         //                                                     </CardText>
         //                                                 </CardBody>
         //                                             </Link>
@@ -285,16 +241,15 @@ const IhOfLife = () => {
         //                                         <Card className="card-hover">
         //                                             <Link className="card-hover__image" to="/">
         //                                                 <CardBody>
-        //                                                     <CardTitle className="mt-0">논문 다이제스트</CardTitle>
+        //                                                     <CardTitle className="mt-0">IH 진료실 3</CardTitle>
         //                                                 </CardBody>
-        //                                                 <CardImg className="img-fluid" src={image5} alt="Skote" />
+        //                                                 <CardImg top className="img-fluid" src={image4} alt="Skote" />
         //                                                 <CardBody>
-        //                                                     <CardTitle className="mt-0">포괄수가제 도입 이후 상급종합병원 산부인과 영역의 변화</CardTitle>
+        //                                                     <CardTitle className="mt-0">극심한 복통? 무증상?
+        //                                                         급성 담낭염과 만성 담낭염</CardTitle>
         //                                                     <CardText>
-        //                                                         포괄수가제란?
-        //                                                         포괄수가제(Diagnosis-related group, DRG)란 의사가 진단하는 환자의 진단명에 따라
-        //                                                         입원환자의 진료비를 보상하는 제도로서 입원기간 동안 제공된 검사비, 수술비, 약제비 등 의료서비스의 종류나
-        //                                                         양에 관계없이 어떤 질병의 진료를 위해 입원했었는가에 따라 미리 책정된 일정액의 진료비를 보상하는 제도이다.
+        //                                                         건강보험심사평가원에 따르면 담낭염으로 병원을 찾는 환자 수가 매년 증가하는 것으로 나타났다.
+        //                                                         특히 최근에는 서구화된 식단과 비만으로 콜레스테롤 담석이 증가하고 있으며, 체중을 줄이기 위한 무리한 다이어트나 장기간 금식으로 담즙 속 염분과 콜레스테롤 균형이 깨져 만성 담낭염의 발병 위험도 커지고 있다.
         //                                                     </CardText>
         //                                                 </CardBody>
         //                                             </Link>
@@ -304,15 +259,14 @@ const IhOfLife = () => {
         //                                         <Card className="card-hover">
         //                                             <Link className="card-hover__image" to="/">
         //                                                 <CardBody>
-        //                                                     <CardTitle className="mt-0">의료진 해외연수 후기</CardTitle>
+        //                                                     <CardTitle className="mt-0">IH 진료실 4</CardTitle>
         //                                                 </CardBody>
-        //                                                 <CardImg className="img-fluid" src={image6} alt="Skote" />
+        //                                                 <CardImg top className="img-fluid" src={image5} alt="Skote" />
         //                                                 <CardBody>
-        //                                                     <CardTitle className="mt-0">빅데이터 연구를 위해 뉴사우스웨일스 주립대학으로 가다</CardTitle>
+        //                                                     <CardTitle className="mt-0">피부 노화의 주범, 검버섯</CardTitle>
         //                                                     <CardText>
-        //                                                         저는 평소 관심 있던 빅데이터를 연구하기 위해 지난 1년간 뉴사우스웨일스 주립대학 의대 빅데이터 연구센터로 해외연수를 다녀왔습니다.
-        //                                                         이곳에서 저는 암 역학을 연구하는 팀에서 유방암 코호트 연구에 참여해,
-        //                                                         관심 있던 빅데이터를 통한 심도 있는 연구는 물론 뜻깊은 시간을 보낼 수 있었습니다.
+        //                                                         검버섯은 나이가 들수록 흑자, 기미 , 주근깨와 함께 가장 많이 발생하는 피부 증상 중 하나이다.
+        //                                                         특히나 검버섯은 흑자, 기미, 주근깨보다 모양도 크고 색도 진해 미용상 더욱 신경 쓰이는 피부 병변 중 하나이다.
         //                                                     </CardText>
         //                                                 </CardBody>
         //                                             </Link>
@@ -320,7 +274,8 @@ const IhOfLife = () => {
         //                                     </Col>
         //
         //                                 </Row>
-        //                             </> : null}
+        //                             </> : null
+        //                         }
         //
         //                         <div className="owl-nav" style={{ textAlign : "center" }}>
         //                             <button
@@ -358,4 +313,4 @@ const IhOfLife = () => {
     );
 };
 
-export default IhOfLife;
+export default HomeColorOfLife;

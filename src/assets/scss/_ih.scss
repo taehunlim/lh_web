@@ -1,0 +1,26 @@
+.color-of-life {
+
+
+  &__header {
+    div {
+      font-size: 20px;
+    }
+
+    background-color: #f7b100;
+  }
+
+  &__body {
+    &__title {
+      font-size: 35px
+    }
+
+    &__subtitle {
+      font-size: 25px;
+      font-weight: 600
+    }
+
+    &__text {
+      font-size: 25px
+    }
+  }
+}

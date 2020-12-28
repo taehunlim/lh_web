@@ -1,6 +1,6 @@
-// 
+//
 // _footer.scss
-// 
+//
 
 .footer {
     bottom: 0;
@@ -12,7 +12,14 @@
     height: $footer-height;
     background-color: $footer-bg;
 }
-  
+
+.footer-icon {
+    a {
+        margin: 15px;
+        color : bisque;
+    }
+}
+
 @media (max-width: 992px) {
     .footer {
         left: 0;
@@ -29,5 +36,5 @@
 body[data-layout="horizontal"] {
     .footer {
         left: 0 !important;
-    }  
+    }
 }

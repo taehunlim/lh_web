@@ -24,7 +24,7 @@ import image5 from "../../assets/images/example/color5.jpg";
 SwiperCore.use([Navigation, Pagination, Controller, Scrollbar])
 
 
-const IhNews = () => {
+const HomeIhNews = () => {
 
     const [step1, setStep1] = useState(true)
     const [step2, setStep2] = useState(false)
@@ -260,4 +260,4 @@ const IhNews = () => {
     );
 };
 
-export default IhNews;
+export default HomeIhNews;
