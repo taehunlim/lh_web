@@ -37,78 +37,91 @@ const HomeIhOfLife = () => {
 
     const items = [
         {
+            id: "1",
             src: image1,
             head: "IH 20th",
             title: "의료서비스 혁신 기반으로 스마트병원 시대를 꿈꾸다",
             caption: ""
         },
         {
+            id: "2",
             src: image2,
             head: "함꼐 걷기",
             title: "변함없는 신뢰로 맞이한 생명의 탄생",
             caption: ""
         },
         {
+            id: "3",
             src: image3,
             head: "오후의 티타임",
             title: "외래팀",
             caption: ""
         },
         {
+            id: "4",
             src: image4,
             head: "IH POWER",
             title: "특수사업팀 김민경 & 연구 전문의 안찬식",
             caption: ""
         },
         {
+            id: "5",
             src: image5,
             head: "논문 다이제스",
             title: "트포괄수가제 도입 이후",
             caption: ""
         },
         {
+            id: "6",
             src: image6,
             head: "Prologue",
             title: "희망을 이야기하는 Color",
             caption: ""
         },
         {
+            id: "7",
             src: image7,
             head: "Prologue",
             title: "희망을 이야기하는 Color",
             caption: ""
         },
         {
+            id: "8",
             src: image8,
             head: "Prologue",
             title: "희망을 이야기하는 Color",
             caption: ""
         },
         {
+            id: "9",
             src: image9,
             head: "Prologue",
             title: "희망을 이야기하는 Color",
             caption: ""
         },
         {
+            id: "10",
             src: image10,
             head: "Prologue",
             title: "희망을 이야기하는 Color",
             caption: ""
         },
         {
+            id: "11",
             src: image11,
             head: "Prologue",
             title: "희망을 이야기하는 Color",
             caption: ""
         },
         {
+            id: "12",
             src: image12,
             head: "Prologue",
             title: "희망을 이야기하는 Color",
             caption: ""
         },
         {
+            id: "13",
             src: image13,
             head: "Prologue",
             title: "희망을 이야기하는 Color",
@@ -156,7 +169,7 @@ const HomeIhOfLife = () => {
                                                 <Row>
                                                     <Col md={12}>
                                                         <Card className="card-hover">
-                                                            <Link className="card-hover__image" to="/">
+                                                            <Link className="card-hover__image" to={`ihoflife/${item.id}`}>
                                                                 <CardBody>
                                                                     <CardTitle className="mt-0">{item.head}</CardTitle>
                                                                 </CardBody>
