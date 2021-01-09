@@ -65,6 +65,10 @@ const Cover = () => {
                                 </li>
                             );
                         })}
+
+
+                        <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
+                        <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
                     </ol>
 
                     {items && items.map((item) => {
@@ -75,7 +79,8 @@ const Cover = () => {
                                         paddingTop: "400px",
                                         paddingBottom: "500px",
                                         backgroundImage:`url(${item.src})`,
-                                        backgroundSize: "cover"
+                                        backgroundSize: "cover",
+                                        backgroundPosition: "center center"
                                     }}
                                 >
                                     <Container>
@@ -91,11 +96,12 @@ const Cover = () => {
                                         </Row>
                                     </Container>
                                 </div>
+
                             </CarouselItem>
                         )
                     })}
-                    <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-                    <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
+                    {/*<CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />*/}
+                    {/*<CarouselControl direction="next" directionText="Next" onClickHandler={next} />*/}
                 </Carousel>
             </section>
         </Fragment>

@@ -1,8 +1,13 @@
 
 .carousel-indicators {
 
+  width: 100%;
+  margin: 0px;
+  padding: 0px 150px;
+  background-color: rgba(0, 0, 0, 0.3);
+
   img {
-    max-width: 400px;
+    //max-width: 400px;
     overflow: hidden;
     display: block;
   }
@@ -13,7 +18,17 @@
     width: 400px;
     border: none;
     box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.75);
+  }
 
+  @media (max-width: 1024px) {
+    padding: 0px 100px;
+  }
 
+  @media (min-width: 768px) {
+    padding: 0px 70px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 0px 30px;
   }
 }
